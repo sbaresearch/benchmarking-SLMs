@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 30 09:22:11 2025
-
-@author: ggoldenits
-"""
 
 import os
 import sys
@@ -96,4 +91,5 @@ with open('/workspace/dataset/temp/phish_50.json', 'w') as fp:
     json.dump(p50, fp)
 
       
+
         
