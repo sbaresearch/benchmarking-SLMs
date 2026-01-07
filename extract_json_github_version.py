@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 25 17:17:31 2025
 
-@author: ggoldenits
-"""
 import pandas as pd
 import json
 import re
@@ -115,4 +111,5 @@ def process_dataframe(df, column="analysis_result"):
             "reasoning": reasoning
         })
     
+
     return df.join(pd.DataFrame(results))
