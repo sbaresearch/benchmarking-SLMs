@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 30 08:58:35 2025
-
-@author: ggoldenits
-"""
 
 import os
 import sys
@@ -119,4 +114,5 @@ for m in model_list:
     save_loc = f"/workspace/results/temp/res_{m}_all.json"
     with open(save_loc, 'w') as fp:
         json.dump(result_collection, fp) 
+
 t6=time.time()
