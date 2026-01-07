@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 30 09:18:35 2025
-
-@author: ggoldenits
-"""
 
 def build_html_prompt_v4(html_text, original_character_count):
     prompt = (
@@ -62,4 +57,5 @@ def build_html_prompt_v4(html_text, original_character_count):
         
         
     )
+
     return prompt
