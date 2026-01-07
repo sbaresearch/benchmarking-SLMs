@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 30 09:29:49 2025
-
-@author: ggoldenits
-"""
 
 from bs4 import BeautifulSoup, Tag, NavigableString, Comment
 from urllib.parse import urlparse
@@ -168,5 +163,6 @@ def truncate_html_to_tokens_merged(html: str, max_tokens: int = 1000, model: str
 
     if len(encoding.encode(str(reduced_soup))) > max_tokens:
         reduced_soup = hybrid_trim(reduced_soup, max_tokens, model)
+
 
     return str(reduced_soup)
